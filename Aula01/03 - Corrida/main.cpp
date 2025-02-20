@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cstdlib>
-#define GASTO_DO_AUTOMOVEL 12
 using namespace std;
 
 int main() {
