@@ -18,6 +18,22 @@ void maiorMenor() {
 }
 
 int main(){
-    maiorMenor();
+    system("cls");
+    setlocale(LC_ALL, "Portuguese");
+    char tecla;
+    MENU:
+        cout << "**MENU**"<< endl;
+        cout << "1- Mostrar maior e menor número" << endl;
+        cout << "2- Sair" << endl;
+        cin >> tecla;
+        switch(tecla){
+        case '1':
+            maiorMenor();
+            break;
+        case '2':
+            exit(0);
+            break;
+        }
+    goto MENU;
     return 0;
 }

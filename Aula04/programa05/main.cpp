@@ -77,16 +77,23 @@ void lerDados () {
 
 void listarDados(){
     int maiorIdade, menorIdade, saldo;
+    string nomeMaiorIdade, nomeMenorIdade;
     for(int i = 0; i< array_lenght; i++){
         cout << i+1 << " | " << Nome[i] << " | " << Idade[i] << endl;
     }
 
     for(int i = 0; i< array_lenght; i++){
-        if(Idade[i] > maiorIdade || i == 0) maiorIdade = Idade[i];
-        if(Idade[i] < menorIdade || i == 0) menorIdade = Idade[i];
+        if(Idade[i] > maiorIdade || i == 0){
+            maiorIdade = Idade[i];
+            nomeMaiorIdade = Nome[i];
+        }
+        if(Idade[i] < menorIdade || i == 0) {
+            menorIdade = Idade[i];
+            nomeMenorIdade = Nome[i];
+        }
     }
-    cout << "\nMaior idade:" << maiorIdade <<endl;
-    cout << "Menor idade:" << menorIdade << endl;
+    cout << "\nQuem tem a maior idade:" << nomeMaiorIdade <<endl;
+    cout << "Quem tem a menor idade:" << nomeMenorIdade << endl;
 
     saldo = maiorIdade - menorIdade;
     cout << "Saldo das idades:" << saldo << endl;

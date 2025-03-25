@@ -19,9 +19,23 @@ float MediaVetor(){
 
 int main(){
     float vlmedia = MediaVetor();
-
-    cout << vlmedia << endl;
-    system("pause");
-
+    system("cls");
+    setlocale(LC_ALL, "Portuguese");
+    char tecla;
+    MENU:
+        cout << "**MENU**"<< endl;
+        cout << "1- Mostrar média" << endl;
+        cout << "2- Sair" << endl;
+        cin >> tecla;
+        switch(tecla){
+        case '1':
+            cout << vlmedia << endl;
+            system("pause");
+            break;
+        case '2':
+            exit(0);
+            break;
+        }
+    goto MENU;
     return 0;
 }
