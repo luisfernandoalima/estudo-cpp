@@ -72,6 +72,7 @@ void mostrarPilha(pilha p)
     {
         cout << "\nA pilha está vazia!";
         system("pause");
+        return;
     }
 
     for (int i = p.topo; i >= 0; i--)
