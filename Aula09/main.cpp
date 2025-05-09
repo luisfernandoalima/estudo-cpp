@@ -83,6 +83,8 @@ void getValues()
     cout << "Soma dos valores: " << getSoma(ai, n) << endl;
     cout << "Maior valor: " << getBiggest(ai, n) << endl;
     cout << "Menor valor: " << getSmaller(ai, n) << endl;
+
+    free(ai);
 }
 
 int main()
