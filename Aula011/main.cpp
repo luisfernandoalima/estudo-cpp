@@ -108,6 +108,7 @@ void showValues()
         temp = temp->prox;
     }
 
+    free(temp);
 }
 
 void destrutor()
